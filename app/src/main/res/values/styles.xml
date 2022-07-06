@@ -1,0 +1,117 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="TextRegularGrey18">
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextRegularWhite20">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextMediumWhite21">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">21dp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextTabWhite">
+        <item name="android:textSize">23sp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextWhiteMedium28Capital">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">28sp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextBoldWhite20">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">20dp</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="TextGreenBorder17">
+        <item name="android:textColor">@color/colorGreen</item>
+        <item name="android:textSize">17sp</item>
+        <item name="background">@drawable/green_border_bg</item>
+    </style>
+    
+    <style name="TextBoldBlack20">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+
+
+    <style name="TextBoldBlack18">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="TextRegularGrey17">
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:textSize">17sp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextSemiboldBlack17">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextRegularBlack18">
+            <item name="android:textColor">@color/colorBlack</item>
+            <item name="android:textSize">18sp</item>
+            <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextSemiboldBlack20">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextRegularBlack20">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextRegularPrimaryColor22">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextBoldGrey20">
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+</resources>

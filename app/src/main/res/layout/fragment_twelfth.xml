@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGreenTrans">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCancellation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="left"
+                android:text="Set your cancellation policy"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvCancellation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="5dp"
+                android:background="@drawable/spinner_bg"
+                app:layout_constraintTop_toBottomOf="@id/tvCancellation">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerCancellation"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSecurity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="left"
+                android:text="Security Deposit(Optional)"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvCancellation" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etDeposit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/spinner_bg"
+                android:paddingVertical="9dp"
+                android:paddingEnd="15dp"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="@id/tvSecurity"
+                app:layout_constraintStart_toStartOf="@id/tvSecurity"
+                app:layout_constraintTop_toBottomOf="@id/tvSecurity" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvILS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_radius"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="4dp"
+                android:text="ILS"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintStart_toStartOf="@id/etDeposit"
+                app:layout_constraintTop_toBottomOf="@id/tvSecurity"
+                app:layout_constraintTop_toTopOf="@id/etDeposit"
+                app:layout_constraintBottom_toBottomOf="@id/etDeposit"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRentalPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="left"
+                android:text="Extended rental policy-3 months or more"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etDeposit" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBullet1"
+                android:drawableStart="@drawable/ic__"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@id/tvRentalPolicy"
+                app:layout_constraintTop_toBottomOf="@id/tvRentalPolicy"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRentalPolicy1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:layout_marginTop="7dp"
+                android:paddingEnd="20dp"
+                android:layout_marginEnd="20dp"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Once a reservation is confirmed the guest will provide the host 2 security cheques that will back the booking"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@id/tvBullet1"
+                app:layout_constraintTop_toBottomOf="@id/tvRentalPolicy"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBullet2"
+                android:drawableStart="@drawable/ic__"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@id/tvRentalPolicy"
+                app:layout_constraintTop_toBottomOf="@id/tvRentalPolicy1"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRentalPolicy2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_word"
+                android:paddingStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:paddingEnd="20dp"
+                android:text="Management fees, city taxes &amp; utility bills are excluded from the booking and will be paid directly by the guests."
+                android:textColor="@color/colorDarkGray"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/tvBullet2"
+                app:layout_constraintTop_toBottomOf="@id/tvRentalPolicy1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/btn_submit_green_bg"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingVertical="10dp"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvRentalPolicy2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

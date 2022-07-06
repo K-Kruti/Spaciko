@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEditProfile"
+        android:text="Edit Profile"
+        android:textSize="27sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/ivBackArrow"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_left"
+        app:layout_constraintStart_toStartOf="@id/tvEditProfile"
+        app:layout_constraintTop_toTopOf="@id/tvEditProfile"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/innerConstraintLayout"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/add_place_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEditProfile">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvFirstName"
+                    android:text="First Name"
+                    style="@style/TextBoldBlack20"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginStart="40dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/etFirstName"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/spinner_bg"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="55dp"
+                    app:layout_constraintEnd_toStartOf="@id/etLastName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvFirstName" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvLastName"
+                    android:text="Last Name"
+                    style="@style/TextBoldBlack20"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/etLastName"
+                    app:layout_constraintBottom_toTopOf="@id/etLastName"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginEnd="35dp"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="55dp"
+                    android:paddingVertical="10dp"
+                    android:background="@drawable/spinner_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/etFirstName"
+                    app:layout_constraintTop_toBottomOf="@id/tvLastName" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvInterest"
+                    android:gravity="left"
+                    android:text="My points of interest"
+                    style="@style/TextBoldBlack20"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="40dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etFirstName"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etInterest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:background="@drawable/comment_bg"
+                    android:inputType="textMultiLine"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="80dp"
+                    app:layout_constraintEnd_toEndOf="@id/tvInterest"
+                    app:layout_constraintStart_toStartOf="@id/tvInterest"
+                    app:layout_constraintTop_toBottomOf="@id/tvInterest" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvGender"
+                    android:gravity="left"
+                    android:text="Gender"
+                    style="@style/TextBoldBlack20"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="40dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etInterest"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardView"
+                    app:cardCornerRadius="20dp"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_marginHorizontal="30dp"
+                    app:layout_constraintEnd_toEndOf="@+id/tvGender"
+                    app:layout_constraintStart_toStartOf="@+id/tvGender"
+                    app:layout_constraintTop_toBottomOf="@+id/tvGender" >
+
+                    <Spinner
+                        android:id="@+id/spGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvType"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCompany"
+                    android:gravity="left"
+                    android:text="Company Name"
+                    style="@style/TextBoldBlack20"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="40dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardView"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etCompany"
+                    android:gravity="start"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_marginHorizontal="30dp"
+                    android:paddingVertical="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCompany"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvProfession"
+                    android:gravity="start"
+                    android:text="Profession"
+                    style="@style/TextBoldBlack20"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="40dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etCompany"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etProfession"
+                    android:gravity="start"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_marginHorizontal="30dp"
+                    android:paddingVertical="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvProfession"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTimeZone"
+                    android:gravity="left"
+                    android:text="Local Time Zone"
+                    style="@style/TextBoldBlack20"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="40dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etProfession"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etTimeZone"
+                    android:gravity="start"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_marginHorizontal="30dp"
+                    android:paddingVertical="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvTimeZone"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="30dp"
+                    android:background="@drawable/btn_submit_green_bg"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingVertical="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/etTimeZone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

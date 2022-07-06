@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGreenTrans">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFurnished"
+                android:text="Is your space fully furnished?"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                android:textSize="23dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/radioGroup"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="@id/tvFurnished"
+                app:layout_constraintEnd_toEndOf="@id/tvFurnished"
+                app:layout_constraintTop_toBottomOf="@id/tvFurnished"
+                android:gravity="center">
+
+                <RadioButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/radio_button"
+                    android:button="@android:color/transparent"
+                    android:elevation="2dp"
+                    android:translationZ="3dp"
+                    android:id="@+id/rbYes"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvYes"
+                    android:text="Yes"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/rbNo"
+                    android:layout_marginStart="10dp"
+                    android:elevation="2dp"
+                    android:translationZ="3dp"
+                    android:background="@drawable/radio_button"
+                    android:button="@android:color/transparent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/tvNo"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNoRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_horizontal"
+                android:text="How many rooms do you offer?"
+                android:textColor="@color/colorBlack"
+                android:textSize="23dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/radioGroup" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNoRoom"
+                app:layout_constraintStart_toStartOf="@id/tvNoRoom"
+                app:layout_constraintEnd_toEndOf="@id/tvNoRoom"
+                app:layout_constraintTop_toBottomOf="@id/tvNoRoom"
+                android:background="@drawable/spinner_bg"
+                android:layout_marginHorizontal="30dp"
+                android:paddingVertical="7dp"
+                android:layout_marginTop="7dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSharedPrivate"
+                android:text="Are your working stations/desks shared or private?"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                android:textSize="23dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="30dp"
+                app:layout_constraintStart_toStartOf="@id/tvNoRoom"
+                app:layout_constraintEnd_toEndOf="@id/tvNoRoom"
+                app:layout_constraintTop_toBottomOf="@id/etNoRoom"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup2"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="@id/tvSharedPrivate"
+                app:layout_constraintEnd_toEndOf="@id/tvSharedPrivate"
+                app:layout_constraintTop_toBottomOf="@id/tvSharedPrivate"
+                android:gravity="center">
+
+                <RadioButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/rbShared"
+                    android:background="@drawable/radio_button"
+                    android:button="@android:color/transparent"
+                    android:elevation="2dp"
+                    android:translationZ="3dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvShared"
+                    android:text="Shared"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/rbPrivate"
+                    android:background="@drawable/radio_button"
+                    android:button="@android:color/transparent"
+                    android:elevation="2dp"
+                    android:translationZ="3dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvPrivate"
+                    android:text="Private"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHosted"
+                android:text="Have you ever hosted your venue with a website like Spaciko before?"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                android:textSize="23sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="30dp"
+                app:layout_constraintStart_toStartOf="@id/tvNoRoom"
+                app:layout_constraintEnd_toEndOf="@id/tvNoRoom"
+                app:layout_constraintTop_toBottomOf="@id/radioGroup2"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup3"
+                android:gravity="left"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="@id/tvHosted"
+                app:layout_constraintEnd_toEndOf="@id/tvHosted"
+                app:layout_constraintTop_toBottomOf="@id/tvHosted">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/rbNew"
+                        android:background="@drawable/radio_button"
+                        android:button="@android:color/transparent"
+                        android:elevation="2dp"
+                        android:translationZ="3dp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_toEndOf="@id/rbNew"
+                        android:text="No, I'm new to all this!"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/rbExperience"
+                        android:layout_below="@id/rbNew"
+                        android:background="@drawable/radio_button"
+                        android:button="@android:color/transparent"
+                        android:elevation="2dp"
+                        android:translationZ="3dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvExperienced"
+                        android:text="Yes, I'm experienced with space hosting"
+                        android:textColor="@color/colorBlack"
+                        android:layout_below="@id/rbNew"
+                        android:layout_toEndOf="@id/rbExperience"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSize"
+                android:text="How big is your space?"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorBlack"
+                android:textSize="23dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="40dp"
+                app:layout_constraintStart_toStartOf="@id/tvNoRoom"
+                app:layout_constraintEnd_toEndOf="@id/tvNoRoom"
+                app:layout_constraintTop_toBottomOf="@id/radioGroup3"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSelect"
+                android:text="select Sf/m2"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+                android:gravity="center_horizontal"
+                app:layout_constraintStart_toStartOf="@id/tvSize"
+                app:layout_constraintEnd_toEndOf="@id/tvSize"
+                app:layout_constraintTop_toBottomOf="@id/tvSize"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/spinner_bg"
+                android:paddingVertical="7dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintEnd_toEndOf="@id/tvSelect"
+                app:layout_constraintStart_toStartOf="@id/tvSelect"
+                app:layout_constraintTop_toBottomOf="@id/tvSelect" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_radius"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="4dp"
+                android:text="Sf"
+                android:textSize="17sp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintEnd_toEndOf="@id/etSize"
+                app:layout_constraintTop_toBottomOf="@id/tvSelect"
+                app:layout_constraintTop_toTopOf="@id/etSize"
+                app:layout_constraintBottom_toBottomOf="@id/etSize"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="25dp"
+                android:background="@drawable/btn_submit_green_bg"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintTop_toBottomOf="@id/etSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

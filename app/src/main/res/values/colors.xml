@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18a499</color>
+    <color name="colorPrimaryDark">#18a499</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorPink">#f0476d</color>
+    <color name="colorLightBlue50">#E5F5F5</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackLightText">#606060</color>
+    <color name="colorLightPink">#ff809d</color>
+    <color name="colorBlackTrans">#6B000000</color>
+    <color name="colorLightBlue">#18a499</color>
+    <color name="colorTranBlue">#89d6d0</color>
+    <color name="colorGrey">#d9d9d9</color>
+    <color name="colorFullTrans">#00000000</color>
+    <color name="colorLightRed">#f0476d</color>
+    <color name="colorLightRed50">#E5F5F5</color>
+    <color name="colorYellow">#FFC439</color>
+    <color name="colorDarkYellow">#E49717</color>
+    <color name="colorGreen">#18a499</color>
+    <color name="colorBlue">#499de7</color>
+    <color name="colorgrey">#c1c1c1</color>
+    <color name="colorTextGrey">#7E7E7E</color>
+    <color name="colorCalenderBack">#dbdede</color>
+    <color name="calendar_header">@color/colorPrimary</color>
+    <color name="calendar_header_title">#FFF</color>
+    <color name="selected_date_circle_color_app">#FF5252</color>
+    <color name="range_bg_color_app">#FFCDD2</color>
+    <color name="colorlightGrey">#878787</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorGreenTrans">#E5F5F5</color>
+    <color name="colorButtonLightPink">#E1737F</color>
+    <color name="colorDarkgrey">#A9A9A9</color>
+
+    <color name="notificationRead">#1018A499</color>
+    <color name="lightgreycolor">#B8B8B8</color>
+    <color name="colorPolygon">#3a9dfe</color>
+    <color name="colorSearchBoder">#efefef</color>
+    <color name="colorlightGray">#CCCCCC</color>
+    <color name="colorDarkGray">#777777</color>
+    <color name="colorTodayLightPink">#fde6e6</color>
+    <color name="colorSelectDate">#15a0c8</color>
+    <color name="colorSelectLightDate">#96e2f8</color>
+    <color name="colorCell1">#18A499</color>
+    <color name="colorCell2">#EC836D</color>
+    <color name="colorCell3">#3FA2AC</color>
+    <color name="colorCell4">#EAA866</color>
+    <color name="colorBook">#61d8cf</color>
+    <color name="colorAmount">#85000000</color>
+    <color name="colorDarkGreys">#6E6E6E</color>
+    <color name="unselected_circle">#8BD1CB</color>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGreenTrans">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvGuest"
+        android:text="How many working guests will fit into your space ?"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvNo"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/left_radius"
+        android:src="@drawable/ic_minus"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNo"
+        app:layout_constraintEnd_toStartOf="@+id/tvNo"
+        app:layout_constraintTop_toTopOf="@+id/tvNo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorWhite"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="10dp"
+        android:text="5"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@id/tvGuest"
+        app:layout_constraintStart_toStartOf="@id/tvGuest"
+        app:layout_constraintTop_toBottomOf="@id/tvGuest" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/right_radius"
+        android:src="@drawable/ic_plus"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNo"
+        app:layout_constraintTop_toTopOf="@+id/tvNo"
+        app:layout_constraintStart_toEndOf="@id/tvNo"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvVisitor"
+        android:text="Do you allow visitors during the rent?"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNo"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/tvVisitor"
+        app:layout_constraintEnd_toEndOf="@id/tvVisitor"
+        app:layout_constraintTop_toBottomOf="@id/tvVisitor"
+        android:gravity="center">
+
+        <RadioButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/radio_button"
+            android:button="@android:color/transparent"
+            android:elevation="2dp"
+            android:translationZ="3dp"
+            android:id="@+id/rbYes"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textColor="@color/colorBlack"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/rbNo"
+            android:layout_marginStart="10dp"
+            android:elevation="2dp"
+            android:translationZ="3dp"
+            android:background="@drawable/radio_button"
+            android:button="@android:color/transparent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="@color/colorBlack"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/btn_submit_green_bg"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="23sp"
+        android:layout_marginBottom="50dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

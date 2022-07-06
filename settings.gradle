@@ -1,0 +1,2 @@
+rootProject.name='Spaciko'
+include ':app'

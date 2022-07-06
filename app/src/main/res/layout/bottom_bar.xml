@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivCompass"
+        android:src="@drawable/ic_campas"
+        app:layout_constraintEnd_toStartOf="@id/ivCalendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_calender"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCompass"
+        app:layout_constraintEnd_toStartOf="@id/ivAdd"
+        app:layout_constraintStart_toEndOf="@id/ivCompass"
+        app:layout_constraintTop_toTopOf="@+id/ivCompass" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCalendar"
+        app:layout_constraintEnd_toStartOf="@id/ivComment"
+        app:layout_constraintStart_toEndOf="@id/ivCalendar"
+        app:layout_constraintTop_toTopOf="@+id/ivCalendar" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_comment"
+        app:layout_constraintBottom_toBottomOf="@+id/ivAdd"
+        app:layout_constraintEnd_toStartOf="@id/ivUser"
+        app:layout_constraintStart_toEndOf="@id/ivAdd"
+        app:layout_constraintTop_toTopOf="@+id/ivAdd" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_user"
+        app:layout_constraintBottom_toBottomOf="@+id/ivComment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivComment"
+        app:layout_constraintTop_toTopOf="@+id/ivComment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
